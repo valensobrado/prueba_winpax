@@ -39,6 +39,11 @@ if(isset($_POST['btn'])){
                 <h3>¡Te has inscripto correctamente!</h3>
                 <button><a href="index.php">Cargar otro usuario</a></button>
                 <?php
+            }else{
+                ?>
+                    <h3>El email ingrsado no corresponde con un formato válido o ya está registrado en el sistema</h3>
+                    <button><a href="index.php">Intentar con otro!</a></button> 
+                <?php
             }
         }else{
             ?>
