@@ -11,7 +11,6 @@ if(isset($_POST['btn'])){
 
             $db_winpax = mysqli_connect("localhost", "root", "", "prueba_winpax");
             $busqueda_email = "SELECT * FROM users WHERE email = '$email'";
-            $email = mysqli_real_escape_string($db_winpax, $email);
             $respuesta_email = mysqli_query($db_winpax, $busqueda_email);
             $filas = mysqli_num_rows($respuesta_email);
 
